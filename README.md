@@ -52,4 +52,3 @@ If you would like to contribute to this stopwatch timer project, please follow t
 This stopwatch timer project is licensed under the [MIT License](LICENSE).
 
 Feel free to explore, learn, and contribute!
-```
