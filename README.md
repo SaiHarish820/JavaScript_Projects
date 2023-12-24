@@ -1,4 +1,3 @@
-```markdown
 # JavaScript Projects Repository
 
 Welcome to the JavaScript Projects repository! This repository contains various JavaScript projects to help you learn and practice JavaScript development.
