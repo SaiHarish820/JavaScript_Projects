@@ -1,41 +1,43 @@
-body{
-    background: rgb(124,72,159);
-    background: linear-gradient(90deg, rgba(124,72,159,1) 0%, rgba(43,31,221,1) 20%, rgba(252,176,69,1) 100%);
+body {
+    background: rgb(124, 72, 159);
+    background: linear-gradient(
+        90deg,
+        rgba(124, 72, 159, 1) 0%,
+        rgba(43, 31, 221, 1) 20%,
+        rgba(252, 176, 69, 1) 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: sans-serif;
-
 }
 
-.container{
+.container {
     background-color: rgba(255, 255, 255, 0.318);
     color: black;
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 0 12px rgba(0,0,0.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stopwatch{
+.stopwatch {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
-
-.title{
+.title {
     font-size: 30px;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
 
-.timer{
+.timer {
     font-size: 40px;
     background-color: #ffffff4e;
     padding: 20px;
@@ -45,32 +47,28 @@ body{
 }
 
 @keyframes pulse {
-    from{
+    from {
         transform: scale(1);
     }
 
-    to{
+    to {
         transform: scale(1.04);
     }
-    
 }
 
-
-.timer span{
+.timer span {
     width: 110px;
     display: inline-block;
     text-align: center;
 }
 
-.controls{
+.controls {
     display: flex;
-    gap : 1rem;
-
+    gap: 1rem;
 }
 
-
-         
-button{
+button,
+.start {
     font-size: 1rem;
     background-color: rgb(81, 246, 246);
     padding: 0.75rem 1.5rem;
@@ -79,57 +77,38 @@ button{
     color: black;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-
 }
 
-button:hover{
+button:hover,
+.start:hover {
     background-color: rgb(60, 213, 213);
-
 }
 
-
-.start{
-    font-size: 1rem;
-    background-color: rgb(81, 246, 246);
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.start:hover{
-    background-color: rgb(21, 255, 0);
-}
-
-.stop:hover{
+.stop:hover {
     background-color: rgb(244, 0, 0);
 }
 
-.pause:hover{
+.pause:hover {
     background-color: yellow;
 }
 
-.reset:hover{
+.reset:hover {
     background-color: white;
 }
 
-statBtn:hover{
+statBtn:hover {
     background-color: rgb(60, 213, 213);
-
 }
 
-
-.lap-title{
+.lap-title {
     font-size: 1.2rem;
 }
 
-.laps{
+.laps {
     width: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -139,24 +118,56 @@ ul{
     border-radius: 8px;
     box-shadow: 0 0 12px rgb(95, 85, 85);
 }
-li{
+
+li {
     padding: 1rem;
     border-bottom: 1px solid white;
 }
 
-li:last-child{
+li:last-child {
     border-bottom: none;
 }
 
-li span{
-    font-weight: 700;   
+li span {
+    font-weight: 700;
 }
 
-.txt { 
+.txt {
     font-size: 18px;
-    color: #050500; 
+    color: #050500;
 }
 
-         
+/* Media Queries for responsiveness */
 
- 
+/* For tablets and larger screens */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 80%;
+    }
+
+    .timer {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    button,
+    .start,
+    .stop,
+    .pause,
+    .reset,
+    statBtn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
