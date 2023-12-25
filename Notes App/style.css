@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(to right, rgb(242,112,156),rgb(255,148,114));
+body {
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    font-family: 'Arial', sans-serif;
 }
 
-#main{
+#main {
     min-height: 100vh;
     padding-bottom: 50px;
     display: flex;
@@ -17,7 +18,7 @@ body{
     align-items: flex-start;
 }
 
-#addBtn{
+#addBtn {
     position: fixed;
     right: 10px;
     top: 10px;
@@ -31,21 +32,18 @@ body{
     transition: background-color 0.3s ease;
 }
 
-#addBtn:hover{
+#addBtn:hover {
     background-color: green;
 }
 
-
-.note{
-
+.note {
     background: transparent;
     margin: 15px;
     border-radius: 10px;
     overflow: hidden;
-
 }
 
-.tool{
+.tool {
     background-color: #222831;
     color: white;
     padding: 5px;
@@ -53,19 +51,18 @@ body{
     justify-content: flex-end;
 }
 
-.tool i{
+.tool i {
     padding: 5px;
     cursor: pointer;
     transition: color 0.3s ease;
-
 }
 
-.tool i:hover{
+.tool i:hover {
     color: #aca1a1;
 }
 
-.note textarea{
-    width: 300px;
+.note textarea {
+    width: 100%; /* Make the textarea responsive */
     border: none;
     min-height: 220px;
     resize: none;
@@ -77,6 +74,26 @@ body{
     border-radius: 0px 0px 10px 10px;
 }
 
-.note textarea:hover{
+.note textarea:hover {
     background-color: #293e46;
+}
+
+/* Media Queries for responsiveness */
+
+/* For laptops/desktops */
+@media only screen and (min-width: 768px) {
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    #addBtn {
+        right: 5px;
+        top: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
 }
