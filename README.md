@@ -11,7 +11,6 @@ Welcome to the JavaScript Projects repository! This repository contains various 
 **Video Output:**
 [Watch the Stopwatch Timer in Action]
 
-
 https://github.com/SaiHarish820/JavaScript_Projects/assets/110049566/7f010add-a072-4b29-a89d-6224095cdf30
 
 **Hosted Link:** https://shorturl.at/bsv56
@@ -97,11 +96,6 @@ git clone https://github.com/SaiHarish820/JavaScript_Projects.git
 
 
 https://github.com/SaiHarish820/JavaScript_Projects/assets/110049566/526c8b4f-65b1-40a6-a1a6-2bcc33d55f69
-
-
-
-
-https://github.com/SaiHarish820/JavaScript_Projects/assets/110049566/8326350a-9b0d-4b9f-bf41-400aa54ed3ba
 
 
 
