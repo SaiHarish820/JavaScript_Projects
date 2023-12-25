@@ -117,7 +117,7 @@ git clone https://github.com/SaiHarish820/JavaScript_Projects.git
 2. Open the project folder:
 
 ```bash
-cd Vowel Counter
+cd Notes App
 ```
 
 3. Run the Vowel Counter by opening the `index.html` file in your preferred browser.
